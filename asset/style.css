@@ -9,6 +9,9 @@
   --light-color: #666;
   --bckrnd-light: #fcf6f2;
   --light-green: #71ef94;
+  --light-blue: #f0fbfa;
+  --light-red: #d24e4e;
+  --box-quantity: #c4e6df;
 
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
@@ -246,10 +249,11 @@ html {
   margin-bottom: 6rem;
 }
 
-.about .row {
+.about .row,
+.ppdb .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 5rem;
   padding: 3rem 7%;
 }
 
@@ -402,5 +406,208 @@ html {
   width: 100%;
   height: 66%;
 }
-
 /* end */
+
+/* ppdb start */
+.ppdb {
+  background: var(--bckrnd-light);
+}
+
+.ppdb .header-ppdb {
+  background: var(--orange);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.ppdb .header-ppdb h1 {
+  font-size: 4rem;
+  color: var(--white);
+  text-align: center;
+  font-weight: bolder;
+}
+
+.ppdb .row .image {
+  flex: 1 1 20rem;
+}
+
+.ppdb .row .image img {
+  margin-top: 6rem;
+  padding-left: 7%;
+}
+
+.ppdb .row .jadwal {
+  flex: 1 1 40rem;
+}
+
+.ppdb .row .jadwal h3 {
+  font-size: 4.5rem;
+  color: var(--black);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.ppdb .row .jadwal .table,
+.biaya .row .waktu-sekolah .table {
+  width: 100%;
+}
+
+.ppdb .row .jadwal .table .thead {
+  text-align: left;
+  font-size: 3.5rem;
+  color: var(--old-green);
+}
+
+.ppdb .row .jadwal .table .thead th {
+  padding: 8px;
+}
+
+.ppdb .row .jadwal .table tbody {
+  font-size: 2.5rem;
+  color: var(--black);
+  font-weight: bolder;
+}
+
+.ppdb .row .jadwal .table tbody td {
+  padding: 12px;
+}
+/* ppdb end */
+
+/* biaya */
+.biaya {
+  background: var(--bckrnd-light);
+}
+
+.biaya .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 3rem 10%;
+}
+
+.biaya .row .waktu-sekolah {
+  flex: 1 1 50rem;
+}
+
+/* .biaya .row .waktu-sekolah img { */
+/* width: 75%; */
+/* height: 75%; */
+/* } */
+
+.biaya .row .waktu-sekolah h3 {
+  font-size: 3.5rem;
+  color: var(--old-green);
+  line-height: 1.5;
+  padding-bottom: 2.5rem;
+}
+
+.biaya .row .waktu-sekolah .table .thead {
+  text-align: left;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.biaya .row .waktu-sekolah .table .tbody {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.biaya .row .biaya-pendidikan {
+  flex: 1 1 50rem;
+}
+
+.biaya .row .biaya-pendidikan h3 {
+  font-size: 3.5rem;
+  color: var(--old-green);
+  line-height: 1.5;
+  padding-bottom: 2.5rem;
+  text-align: right;
+}
+
+.biaya .row .biaya-pendidikan h3.terms {
+  text-align: left;
+}
+
+.biaya .row .biaya-pendidikan p {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.biaya .row .biaya-pendidikan p span {
+  text-decoration: underline;
+}
+
+.biaya .row .biaya-pendidikan .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 4rem;
+}
+
+.biaya .row .biaya-pendidikan .table th {
+  text-align: left;
+  font-size: 2.5rem;
+  color: var(--black);
+  background-color: var(--light-green);
+}
+
+.biaya .row .biaya-pendidikan .table .thead th {
+  padding: 1rem;
+}
+
+.biaya .row .biaya-pendidikan .table .tbody {
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+  background-color: var(--light-blue);
+}
+
+.biaya .row .biaya-pendidikan .table .tbody .total {
+  background-color: var(--light-red);
+  color: var(--white);
+}
+
+.biaya .row .biaya-pendidikan .table .tbody td {
+  padding: 1rem;
+}
+/* biaya end */
+
+/* quantity start */
+.quantity {
+  padding: 3rem 20%;
+  background: var(--bckrnd-light);
+}
+
+.quantity .row {
+  margin-top: 5rem;
+}
+
+.quantity .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.quantity .box-container .box {
+  background: var(--box-quantity);
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+
+.quantity .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  text-align: center;
+  line-height: 1.8;
+  padding-top: 3rem;
+}
+
+.quantity .box-container .box p{
+  font-size: 2.5rem;
+  color: var(--black);
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 3rem;
+}
+
+/* quantity end */
